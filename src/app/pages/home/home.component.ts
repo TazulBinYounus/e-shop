@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 
+
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class HeaderComponent {
+export class HomeComponent {
+
   showProductCategoryMenu: boolean = false;
 
   constructor() { }
@@ -13,4 +15,6 @@ export class HeaderComponent {
   ngOnInit(): void {
     this.showProductCategoryMenu = true
   }
+
+
 }

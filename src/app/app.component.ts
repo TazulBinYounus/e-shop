@@ -1,3 +1,4 @@
+import { AuthService } from './auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-new';
+
+  constructor(private authService: AuthService) {}
+
+  isLoggedIn(): boolean {
+    return this.authService.isLoggedIn();
+  }
+
 }
